@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PF_UF1_A1_RubenDaniG</string>
+    <string name="codigo_peliculas">CODIGO PELICULAS</string>
+    <string name="iconoPeli" />
+    <string name="buttonEnviarDades">ENVIAR</string>
+    <string name="editTextTextCodi" />
+    <string name="posar_codi">Posar Codi</string>
+    <string name="textviewTitol">CODI PEL·LICULA</string>
+</resources>
