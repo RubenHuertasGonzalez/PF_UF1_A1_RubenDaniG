@@ -36,6 +36,9 @@ android {
 }
 
 dependencies {
+    implementation("io.socket:socket.io-client:2.0.0"){
+        exclude(group = "org.json", module = "json")
+    }
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
