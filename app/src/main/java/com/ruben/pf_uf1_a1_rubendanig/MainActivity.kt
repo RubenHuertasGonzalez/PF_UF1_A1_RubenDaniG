@@ -32,14 +32,14 @@ class MainActivity : AppCompatActivity() {
                 val mensaje = "Código $codigo enviado"
                 Toast.makeText(this, mensaje, Toast.LENGTH_SHORT).show()
 
-                mSocket.emit("incrementCounter")
+                mSocket.emit("enviarPIN", codigo)
             } catch (e: Exception) {
                 e.printStackTrace()
                 Toast.makeText(this, "Error al enviar el código", Toast.LENGTH_SHORT).show()
             }
         }
 
-        mSocket.on("counter", onCounter)
+        mSocket.on("sendPIN", onCounter)
     }
 
     private val onCounter = Emitter.Listener { args ->
